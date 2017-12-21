@@ -34,10 +34,10 @@ def word():
 def tx(keylength):
     """ Keys the TX """
     # set the output to Key Down...
-    GPIO.output(24, True)
+    GPIO.output(BCM_pin, True)
     time.sleep(keylength)
     # clear the output ...
-    GPIO.output(24, False)
+    GPIO.output(BCM_pin, False)
     return
 
 
