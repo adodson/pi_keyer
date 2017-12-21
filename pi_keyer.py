@@ -7,7 +7,7 @@ import time
 from cmd import Cmd
 
 # Set defaults here
-CALL = "ww4n"
+CALL = "w1aw"
 RST = "r 5nn tu"
 default_WPM = 25
 BCM_pin = 24
