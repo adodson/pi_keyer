@@ -123,7 +123,10 @@ With no arguments, the RST message is sent.
         if not args:
             WPM = default_WPM
         else:
-            WPM = int(args)
+            if args.isdigit():
+                WPM = int(args)
+            else:
+                print("Invalid value for WPM: %s. WPM must be an integer.")
         prompt.prompt = str(WPM) + ' WPM> '
         DitLength = float(60 / float(WPM * 50))
         DahLength = 3 * DitLength
